@@ -2,6 +2,8 @@
 import React from "react";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { FeatureCard } from "@/components/ui/feature-card";
+import { GradientText } from "@/components/ui/gradient-text";
+import { ShimmerButton } from "@/components/ui/shimmer-button";
 import { Briefcase, ChartBar, Globe, Shield, Database, Link, DollarSign, Users } from "lucide-react";
 
 const FeaturesSection = () => {
