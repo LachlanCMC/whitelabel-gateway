@@ -17,7 +17,7 @@ const ApiCodeBlock = ({
 }: ApiCodeBlockProps) => {
   return (
     <div className={cn(
-      "rounded-lg overflow-hidden border opacity-0 animate-fade-in",
+      "rounded-lg overflow-hidden border",
       className
     )}>
       {title && (
