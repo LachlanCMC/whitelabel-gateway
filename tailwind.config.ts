@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -64,19 +63,19 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				invest: {
-					DEFAULT: '#147146',
-					light: '#2c8b5e',
-					dark: '#0e5935',
-					50: '#f0f9f4',
-					100: '#d8efe1',
-					200: '#b3dfca',
-					300: '#7ec5a7',
-					400: '#4aa683',
-					500: '#2c8b5e',
-					600: '#1e7049',
-					700: '#185a3b',
-					800: '#154731',
-					900: '#133c2b',
+					DEFAULT: '#113A2A',
+					light: '#1d5941',
+					dark: '#0a2219',
+					50: '#e6ece9',
+					100: '#ccd9d4',
+					200: '#99b3a9',
+					300: '#668d7e',
+					400: '#336753',
+					500: '#113A2A',
+					600: '#0e2f22',
+					700: '#0a231a',
+					800: '#071811',
+					900: '#030c09',
 				}
 			},
 			fontFamily: {

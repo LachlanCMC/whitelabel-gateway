@@ -1,4 +1,3 @@
-
 import React from "react";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { FeatureCard } from "@/components/ui/feature-card";

@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
@@ -38,8 +37,12 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <div className="flex items-center">
-          <Link to="/" className="text-2xl font-bold text-foreground">
-            CMC<span className="text-invest-500">Invest</span>
+          <Link to="/" className="flex items-center">
+            <img 
+              src="/lovable-uploads/7ce8615d-bdd5-44c3-b141-6a9e5cbbd4b9.png" 
+              alt="CMC Invest" 
+              className="h-8 md:h-10"
+            />
           </Link>
         </div>
 
