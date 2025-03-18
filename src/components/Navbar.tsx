@@ -40,7 +40,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <Link to="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/680a91ac-a971-418f-b559-df937a8f9f7e.png" 
+              src="/lovable-uploads/00d572d5-100f-4f0b-8100-9ab6b34085c9.png" 
               alt="CMC Invest" 
               className="h-8 md:h-10"
             />
@@ -50,10 +50,10 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <a href="#features" className="text-foreground/80 hover:text-foreground transition-colors">
-            Features
+            Products
           </a>
-          <a href="#api" className="text-foreground/80 hover:text-foreground transition-colors">
-            API
+          <a href="#whitelabel" className="text-foreground/80 hover:text-foreground transition-colors">
+            Solutions
           </a>
           <a href="#compliance" className="text-foreground/80 hover:text-foreground transition-colors">
             Compliance
@@ -83,14 +83,14 @@ const Navbar = () => {
               className="text-foreground/80 hover:text-foreground py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Features
+              Products
             </a>
             <a 
-              href="#api" 
+              href="#whitelabel" 
               className="text-foreground/80 hover:text-foreground py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              API
+              Solutions
             </a>
             <a 
               href="#compliance" 

@@ -4,6 +4,7 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { ApiCodeBlock } from "@/components/ui/api-code-block";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
+import { ArrowRight } from "lucide-react";
 
 const ApiSection = () => {
   const createOrderCode = `// Create a new investment order
@@ -65,13 +66,22 @@ app.post('/webhooks/order-updates', (req, res) => {
 });`;
 
   return (
-    <section id="api" className="py-20 md:py-28 bg-slate-50">
+    <section id="api" className="py-20 md:py-28 bg-white">
       <div className="container mx-auto px-4 md:px-6">
-        <SectionHeading
-          subtleText="Developer Resources"
-          title="Powerful APIs for seamless integration"
-          description="Our RESTful APIs and comprehensive documentation make it easy to integrate investment capabilities into your existing systems and workflows."
-        />
+        <div className="mb-16">
+          <p className="text-sm font-medium mb-2">Driven by technology</p>
+          <h2 className="text-5xl md:text-6xl font-bold text-pink-500 mb-6">
+            Be part of the future of<br />banking with our API
+          </h2>
+          <p className="text-xl text-gray-700 max-w-3xl">
+            With our cloud-based API, we offer banking infrastructure so financial institutions can 
+            focus on providing the best service for their customers and stay relevant in a fast-paced market.
+          </p>
+          
+          <ShimmerButton className="mt-8 bg-white hover:bg-gray-50 text-black border border-gray-300 rounded-full px-6 flex items-center gap-2">
+            Explore our API <ArrowRight className="h-4 w-4" />
+          </ShimmerButton>
+        </div>
 
         <div className="mt-12 max-w-4xl mx-auto">
           <Tabs defaultValue="orders" className="w-full">
@@ -90,12 +100,6 @@ app.post('/webhooks/order-updates', (req, res) => {
               <ApiCodeBlock code={webhookCode} language="javascript" title="Webhook Integration" />
             </TabsContent>
           </Tabs>
-
-          <div className="mt-10 text-center">
-            <ShimmerButton className="bg-invest-500 hover:bg-invest-600 text-white">
-              Explore Complete API Documentation
-            </ShimmerButton>
-          </div>
         </div>
       </div>
     </section>

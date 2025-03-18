@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import FeaturesSection from "@/components/FeaturesSection";
+import WhitelabelSection from "@/components/WhitelabelSection";
 import ApiSection from "@/components/ApiSection";
 import ComplianceSection from "@/components/ComplianceSection";
 import CtaSection from "@/components/CtaSection";
@@ -42,6 +43,7 @@ const Index = () => {
       <main className="flex-grow">
         <HeroSection />
         <FeaturesSection />
+        <WhitelabelSection />
         <ApiSection />
         <ComplianceSection />
         <CtaSection />
