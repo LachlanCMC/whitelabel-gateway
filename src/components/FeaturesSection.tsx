@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { GradientText } from "@/components/ui/gradient-text";
@@ -14,35 +13,35 @@ const FeaturesSection = () => {
       title: "Fractional Shares",
       description: "Enable your customers to invest in fractional units of expensive stocks, increasing accessibility and portfolio diversification.",
       icon: <ChartBar className="h-6 w-6" />,
-      imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80"
+      imageUrl: "https://images.unsplash.com/photo-1642543348745-03b1219733d9?auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 2,
       title: "Global Market Access",
       description: "Offer access to international markets with multi-currency support and efficient settlement workflows across 35+ global exchanges.",
       icon: <Globe className="h-6 w-6" />,
-      imageUrl: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80"
+      imageUrl: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 3,
       title: "Mutual Funds",
       description: "Provide access to thousands of mutual funds from leading fund houses with automated order processing and dividend reinvestment.",
       icon: <Coins className="h-6 w-6" />,
-      imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+      imageUrl: "https://images.unsplash.com/photo-1613843447716-37b48d2c20ae?auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 4,
       title: "Tax Wrappers",
       description: "Support for Cash ISA, Stocks & Shares ISA, Junior ISA, and Trust accounts with full regulatory compliance and tax reporting.",
       icon: <Shield className="h-6 w-6" />,
-      imageUrl: "https://images.unsplash.com/photo-1586486942853-511cfa86bb04?auto=format&fit=crop&w=800&q=80"
+      imageUrl: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 5,
       title: "Portfolio Management",
       description: "Comprehensive tools for constructing, analyzing, and rebalancing investment portfolios with real-time data and performance analytics.",
       icon: <Briefcase className="h-6 w-6" />,
-      imageUrl: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80"
+      imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
     }
   ];
 
