@@ -15,6 +15,30 @@
   }
 }
 
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -114,11 +138,11 @@
   .gradient-background {
     background: linear-gradient(
       135deg,
-      rgba(20, 113, 70, 0.05) 0%,
-      rgba(20, 113, 70, 0.1) 25%,
-      rgba(20, 113, 70, 0.05) 50%,
-      rgba(20, 113, 70, 0.1) 75%,
-      rgba(20, 113, 70, 0.05) 100%
+      rgba(17, 58, 42, 0.05) 0%,
+      rgba(17, 58, 42, 0.1) 25%,
+      rgba(17, 58, 42, 0.05) 50%,
+      rgba(17, 58, 42, 0.1) 75%,
+      rgba(17, 58, 42, 0.05) 100%
     );
     background-size: 400% 400%;
     animation: gradientMove 15s ease infinite;
@@ -171,5 +195,32 @@
     opacity: 1;
     transform: rotate(30deg) translate(150%, -150%);
     transition: transform 0.7s ease-out, opacity 0.3s ease-in;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 4s ease-in-out infinite;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.5s ease-out forwards;
+  }
+
+  .animate-fade-in-fast {
+    animation: fade-in 0.3s ease-out forwards;
   }
 }

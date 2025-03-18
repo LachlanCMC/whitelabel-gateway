@@ -31,7 +31,7 @@ const ComplianceSection = () => {
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
-          <Card className="animate-fade-in opacity-0" style={{ animationDelay: "0.1s" }}>
+          <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Shield className="h-5 w-5 text-invest-500" />
@@ -56,7 +56,7 @@ const ComplianceSection = () => {
             </CardContent>
           </Card>
 
-          <Card className="animate-fade-in opacity-0" style={{ animationDelay: "0.2s" }}>
+          <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Shield className="h-5 w-5 text-invest-500" />

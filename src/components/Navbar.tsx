@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
@@ -39,7 +40,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <Link to="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/7ce8615d-bdd5-44c3-b141-6a9e5cbbd4b9.png" 
+              src="/lovable-uploads/680a91ac-a971-418f-b559-df937a8f9f7e.png" 
               alt="CMC Invest" 
               className="h-8 md:h-10"
             />
@@ -56,9 +57,6 @@ const Navbar = () => {
           </a>
           <a href="#compliance" className="text-foreground/80 hover:text-foreground transition-colors">
             Compliance
-          </a>
-          <a href="#testimonials" className="text-foreground/80 hover:text-foreground transition-colors">
-            Testimonials
           </a>
           <ShimmerButton className="bg-invest-500 hover:bg-invest-600 text-white">
             Request Demo
@@ -100,13 +98,6 @@ const Navbar = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               Compliance
-            </a>
-            <a 
-              href="#testimonials" 
-              className="text-foreground/80 hover:text-foreground py-2 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Testimonials
             </a>
             <ShimmerButton className="bg-invest-500 hover:bg-invest-600 text-white w-full">
               Request Demo

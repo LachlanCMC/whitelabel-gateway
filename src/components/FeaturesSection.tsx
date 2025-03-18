@@ -1,47 +1,48 @@
-import React from "react";
+
+import React, { useState } from "react";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { FeatureCard } from "@/components/ui/feature-card";
 import { GradientText } from "@/components/ui/gradient-text";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
-import { Briefcase, ChartBar, Globe, Shield, Database, Link, DollarSign, Users } from "lucide-react";
+import { ArrowRight, ChartBar, Globe, Coins, Shield, Briefcase } from "lucide-react";
 
 const FeaturesSection = () => {
-  const features = [
+  const [activeProduct, setActiveProduct] = useState(0);
+  
+  const products = [
     {
+      id: 1,
       title: "Fractional Shares",
       description: "Enable your customers to invest in fractional units of expensive stocks, increasing accessibility and portfolio diversification.",
       icon: <ChartBar className="h-6 w-6" />,
       imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80"
     },
     {
-      title: "Tax Wrappers",
-      description: "Support for ISAs, SIPPs, and other tax-efficient investment vehicles, fully compliant with local regulations.",
-      icon: <DollarSign className="h-6 w-6" />,
-      imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      title: "Global Share Dealing",
-      description: "Offer access to international markets with multi-currency support and efficient settlement workflows.",
+      id: 2,
+      title: "Global Market Access",
+      description: "Offer access to international markets with multi-currency support and efficient settlement workflows across 35+ global exchanges.",
       icon: <Globe className="h-6 w-6" />,
       imageUrl: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80"
     },
     {
+      id: 3,
+      title: "Mutual Funds",
+      description: "Provide access to thousands of mutual funds from leading fund houses with automated order processing and dividend reinvestment.",
+      icon: <Coins className="h-6 w-6" />,
+      imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      id: 4,
+      title: "Tax Wrappers",
+      description: "Support for Cash ISA, Stocks & Shares ISA, Junior ISA, and Trust accounts with full regulatory compliance and tax reporting.",
+      icon: <Shield className="h-6 w-6" />,
+      imageUrl: "https://images.unsplash.com/photo-1586486942853-511cfa86bb04?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      id: 5,
       title: "Portfolio Management",
-      description: "Comprehensive tools for constructing, analyzing, and rebalancing investment portfolios with real-time data.",
+      description: "Comprehensive tools for constructing, analyzing, and rebalancing investment portfolios with real-time data and performance analytics.",
       icon: <Briefcase className="h-6 w-6" />,
       imageUrl: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      title: "API Integration",
-      description: "Easily integrate with your existing systems using our comprehensive, well-documented REST APIs.",
-      icon: <Link className="h-6 w-6" />,
-      imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      title: "Whitelabel UI",
-      description: "Fully customizable user interfaces that can be branded to match your company's identity and design language.",
-      icon: <Users className="h-6 w-6" />,
-      imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
     }
   ];
 
@@ -49,45 +50,71 @@ const FeaturesSection = () => {
     <section id="features" className="py-20 md:py-28 relative bg-gray-50">
       <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-50 -z-10"></div>
       <div className="container mx-auto px-4 md:px-6">
-        <SectionHeading
-          subtleText="Features"
-          title="Everything you need to launch investment products"
-          description="Our platform combines powerful investment capabilities with flexible integration options, so you can get to market quickly without compromising on features."
-        />
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
-          {features.map((feature, index) => (
-            <FeatureCard
-              key={feature.title}
-              title={feature.title}
-              description={feature.description}
-              icon={feature.icon}
-              index={index}
-              imageUrl={feature.imageUrl}
-            />
-          ))}
+        <div className="mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our products</h2>
+          <div className="flex items-center">
+            <span className="text-3xl font-bold">0{activeProduct + 1}</span>
+            <div className="h-[1px] w-10 bg-gray-300 mx-4"></div>
+            <span className="text-3xl text-gray-300 font-bold">05</span>
+          </div>
         </div>
 
-        <div className="mt-16 animate-fade-in flex flex-col md:flex-row items-center justify-center gap-6">
-          <div className="text-center md:text-left md:max-w-lg">
-            <h3 className="text-2xl font-bold mb-4">
-              <GradientText 
-                text="Ready to transform your investment platform?" 
-                fromColor="from-invest-500" 
-                toColor="to-invest-700"
-                animate={true}
-              />
-            </h3>
-            <p className="text-muted-foreground mb-6">
-              Join leading financial companies that are leveraging our infrastructure to deliver exceptional investment experiences.
-            </p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* Product Navigation */}
+          <div className="space-y-8">
+            {products.map((product, index) => (
+              <div 
+                key={product.id}
+                className={`transition-all duration-300 cursor-pointer group`}
+                onClick={() => setActiveProduct(index)}
+              >
+                <h3 className={`text-3xl md:text-4xl font-bold mb-2 transition-colors duration-300 ${activeProduct === index ? 'text-foreground' : 'text-gray-300'}`}>
+                  {product.title}
+                </h3>
+                
+                {activeProduct === index && (
+                  <div className="animate-fade-in">
+                    <p className="text-lg text-muted-foreground mb-6">
+                      {product.description}
+                    </p>
+                    <ShimmerButton 
+                      className="flex items-center gap-2 text-invest-500 hover:text-invest-600 font-semibold border-none bg-transparent"
+                      shimmerColor="rgba(17, 58, 42, 0.1)"
+                    >
+                      Get started <ArrowRight className="h-4 w-4" />
+                    </ShimmerButton>
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
-          <div>
-            <ShimmerButton 
-              className="bg-invest-500 hover:bg-invest-600 text-white px-6 py-3 text-lg"
-            >
-              Book a Demo
-            </ShimmerButton>
+          
+          {/* Product Visuals */}
+          <div className="relative bg-gray-100 rounded-3xl overflow-hidden h-[500px]">
+            {products.map((product, index) => (
+              <div 
+                key={product.id}
+                className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${activeProduct === index ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
+              >
+                <div className="h-full w-full p-8 flex flex-col justify-between">
+                  <div className="w-full h-4/5 overflow-hidden rounded-2xl">
+                    <img 
+                      src={product.imageUrl} 
+                      alt={product.title}
+                      className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                    />
+                  </div>
+                  <div className="flex items-center justify-between mt-4">
+                    <p className="font-medium text-lg">Choose the investment capabilities that work best for your business and your customers.</p>
+                    <ShimmerButton 
+                      className="bg-black hover:bg-gray-800 text-white rounded-full flex items-center gap-2 px-6 py-3"
+                    >
+                      Get started <ArrowRight className="h-4 w-4" />
+                    </ShimmerButton>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
