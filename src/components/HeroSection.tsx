@@ -10,10 +10,15 @@ const HeroSection = () => {
     <section className="pt-32 pb-16 md:pt-40 md:pb-20 overflow-hidden relative">
       <div className="absolute inset-0 bg-white -z-10"></div>
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-8 animate-fade-in">
-          <p className="text-lg md:text-xl font-medium text-invest-600">
-            CMC Group support
-          </p>
+        <div className="flex justify-start mb-8 animate-fade-in">
+          <div className="flex space-x-4">
+            <button className="px-4 py-2 text-sm font-medium text-invest-600 bg-white border border-invest-200 rounded-full hover:bg-invest-50 transition-colors">
+              Personal
+            </button>
+            <button className="px-4 py-2 text-sm font-medium text-invest-600 bg-white border border-invest-200 rounded-full hover:bg-invest-50 transition-colors">
+              Business
+            </button>
+          </div>
         </div>
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-12 animate-fade-in">
@@ -69,10 +74,7 @@ const HeroSection = () => {
           
           <div className="flex-1 w-full max-w-2xl lg:max-w-none animate-float">
             <AspectRatio ratio={4/3} className="rounded-3xl overflow-hidden shadow-xl">
-              <div className="glass-panel h-full w-full p-6 relative overflow-hidden bg-gradient-to-br from-invest-100 to-invest-200 border-[1px] border-invest-300">
-                <div className="absolute -right-12 -bottom-12 w-64 h-64 bg-invest-300 rounded-full opacity-50 blur-xl"></div>
-                <div className="absolute left-12 top-12 w-24 h-24 bg-invest-400 rounded-full opacity-40 blur-lg"></div>
-                
+              <div className="h-full w-full p-6 relative overflow-hidden bg-white border-[1px] border-invest-300">
                 <div className="relative z-10 h-full">
                   <div className="grid grid-cols-2 gap-4 h-full">
                     <div className="space-y-4">

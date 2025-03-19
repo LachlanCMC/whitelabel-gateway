@@ -4,33 +4,38 @@ import React, { useEffect, useRef } from "react";
 const partners = [
   {
     name: "Revolut",
-    logo: "/lovable-uploads/54753089-fb7a-4a30-a9f0-7fa4f0e25ef2.png",
-    logoClass: "h-10 md:h-12" // Adjust based on logo proportions
+    logo: "/lovable-uploads/94dcc645-f0d3-4c70-9d20-606efd6059d2.png",
+    logoClass: "h-8 md:h-10" // Adjust based on logo proportions
   },
   {
     name: "RBC",
-    logo: "/lovable-uploads/54753089-fb7a-4a30-a9f0-7fa4f0e25ef2.png",
+    logo: "/lovable-uploads/c1107d67-c03d-4ad6-bf9b-23ba562f7cda.png",
     logoClass: "h-10 md:h-12" 
   },
   {
     name: "Currys",
-    logo: "/lovable-uploads/54753089-fb7a-4a30-a9f0-7fa4f0e25ef2.png",
+    logo: "/lovable-uploads/5e3b812e-319e-49c0-b060-fd54b835c28c.png",
     logoClass: "h-10 md:h-12" 
   },
   {
     name: "ANZ Bank",
-    logo: "/lovable-uploads/54753089-fb7a-4a30-a9f0-7fa4f0e25ef2.png",
-    logoClass: "h-10 md:h-12" 
+    logo: "/lovable-uploads/4c5f8a9c-30c6-4818-a9bf-81cecdebe2bd.png",
+    logoClass: "h-8 md:h-10" 
   },
   {
-    name: "Bendigo Invest Direct",
-    logo: "/lovable-uploads/54753089-fb7a-4a30-a9f0-7fa4f0e25ef2.png",
-    logoClass: "h-10 md:h-12" 
+    name: "Bendigo Bank",
+    logo: "/lovable-uploads/49301167-f5e3-41e0-bcdf-03ea0908921e.png",
+    logoClass: "h-8 md:h-10" 
   },
   {
-    name: "Plum",
-    logo: "/lovable-uploads/54753089-fb7a-4a30-a9f0-7fa4f0e25ef2.png",
-    logoClass: "h-10 md:h-12" 
+    name: "St.George",
+    logo: "/lovable-uploads/4b7086fa-1c8f-4003-a74b-8c070abc29ff.png",
+    logoClass: "h-8 md:h-10" 
+  },
+  {
+    name: "E-Superfund",
+    logo: "/lovable-uploads/5e025d2b-424c-4037-8b3b-926f9ad282fa.png",
+    logoClass: "h-8 md:h-10" 
   }
 ];
 
@@ -69,14 +74,8 @@ const PartnersCarousel = () => {
   }, []);
 
   return (
-    <section className="py-8 bg-slate-50">
+    <section className="py-6 bg-slate-50">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-6">
-          <h3 className="text-lg md:text-xl font-semibold text-invest-600">
-            CMC Group supports the following companies
-          </h3>
-        </div>
-        
         <div className="relative overflow-hidden">
           <div className="w-full overflow-hidden">
             <div className="ticker-wrap" ref={scrollRef}>
@@ -84,7 +83,7 @@ const PartnersCarousel = () => {
                 {partners.map((partner, index) => (
                   <div 
                     key={index} 
-                    className="ticker-item flex items-center justify-center mx-12"
+                    className="ticker-item flex items-center justify-center mx-10"
                   >
                     <img 
                       src={partner.logo} 
@@ -97,7 +96,7 @@ const PartnersCarousel = () => {
                 {partners.map((partner, index) => (
                   <div 
                     key={`repeat-${index}`} 
-                    className="ticker-item flex items-center justify-center mx-12"
+                    className="ticker-item flex items-center justify-center mx-10"
                   >
                     <img 
                       src={partner.logo} 
