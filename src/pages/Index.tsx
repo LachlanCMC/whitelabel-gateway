@@ -6,6 +6,7 @@ import PartnersCarousel from "@/components/PartnersCarousel";
 import FeaturesSection from "@/components/FeaturesSection";
 import WhitelabelSection from "@/components/WhitelabelSection";
 import ApiSection from "@/components/ApiSection";
+import AiSection from "@/components/AiSection";
 import ComplianceSection from "@/components/ComplianceSection";
 import CtaSection from "@/components/CtaSection";
 import Footer from "@/components/Footer";
@@ -47,6 +48,7 @@ const Index = () => {
         <FeaturesSection />
         <WhitelabelSection />
         <ApiSection />
+        <AiSection />
         <ComplianceSection />
         <CtaSection />
       </main>
