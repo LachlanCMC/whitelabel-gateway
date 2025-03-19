@@ -10,48 +10,12 @@ const HeroSection = () => {
     <section className="pt-32 pb-16 md:pt-40 md:pb-20 overflow-hidden relative">
       <div className="absolute inset-0 bg-white -z-10"></div>
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex justify-start mb-8 animate-fade-in">
-          <div className="flex space-x-4">
-            <button className="px-4 py-2 text-sm font-medium text-invest-600 bg-white border border-invest-200 rounded-full hover:bg-invest-50 transition-colors">
-              Personal
-            </button>
-            <button className="px-4 py-2 text-sm font-medium text-invest-600 bg-white border border-invest-200 rounded-full hover:bg-invest-50 transition-colors">
-              Business
-            </button>
-          </div>
-        </div>
-        
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-12 animate-fade-in">
-          <div className="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300 text-center">
-            <h3 className="text-sm font-medium mb-1 text-invest-700">Total traders and investors</h3>
-            <p className="text-2xl font-bold text-invest-600">1m+</p>
-          </div>
-          <div className="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300 text-center">
-            <h3 className="text-sm font-medium mb-1 text-invest-700">Partners supported</h3>
-            <p className="text-2xl font-bold text-invest-600">150+</p>
-          </div>
-          <div className="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300 text-center">
-            <h3 className="text-sm font-medium mb-1 text-invest-700">Core uptime</h3>
-            <p className="text-2xl font-bold text-invest-600">99.95%</p>
-          </div>
-          <div className="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300 text-center">
-            <h3 className="text-sm font-medium mb-1 text-invest-700">Years of experience</h3>
-            <p className="text-2xl font-bold text-invest-600">30+</p>
-          </div>
-        </div>
-        
         <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-20">
           <div className="flex-1 space-y-8 animate-fade-in max-w-2xl">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight md:leading-tight">
               Launch investment products 
               <span className="block mt-2">
-                <GradientText 
-                  text="in weeks, not years" 
-                  fromColor="from-invest-500" 
-                  toColor="to-invest-600"
-                  animate={true}
-                  size="xl"
-                />
+                in weeks, not years
               </span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl">
@@ -73,33 +37,29 @@ const HeroSection = () => {
           </div>
           
           <div className="flex-1 w-full max-w-2xl lg:max-w-none animate-float">
-            <AspectRatio ratio={4/3} className="rounded-3xl overflow-hidden shadow-xl">
-              <div className="h-full w-full p-6 relative overflow-hidden bg-white border-[1px] border-invest-300">
+            <AspectRatio ratio={4/3} className="rounded-lg overflow-hidden shadow-lg">
+              <div className="h-full w-full p-6 relative overflow-hidden bg-white border border-invest-200">
                 <div className="relative z-10 h-full">
                   <div className="grid grid-cols-2 gap-4 h-full">
                     <div className="space-y-4">
                       <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                        <h3 className="text-sm font-medium mb-1 text-invest-700">Portfolio Value</h3>
-                        <p className="text-2xl font-bold text-invest-600">£1,284,500</p>
-                        <p className="text-xs text-green-600 mt-1">+3.2% today</p>
+                        <h3 className="text-sm font-medium mb-1 text-invest-700">Total traders and investors</h3>
+                        <p className="text-2xl font-bold text-invest-600">1m+</p>
                       </div>
                       <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                        <h3 className="text-sm font-medium mb-1 text-invest-700">Active Accounts</h3>
-                        <p className="text-2xl font-bold text-invest-600">24,387</p>
-                        <p className="text-xs text-green-600 mt-1">+128 this week</p>
+                        <h3 className="text-sm font-medium mb-1 text-invest-700">Partners supported</h3>
+                        <p className="text-2xl font-bold text-invest-600">150+</p>
                       </div>
                     </div>
                     
-                    <div className="space-y-4 mt-8">
+                    <div className="space-y-4">
                       <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                        <h3 className="text-sm font-medium mb-1 text-invest-700">API Uptime</h3>
-                        <p className="text-2xl font-bold text-invest-600">99.99%</p>
-                        <p className="text-xs text-slate-500 mt-1">Last 30 days</p>
+                        <h3 className="text-sm font-medium mb-1 text-invest-700">Core uptime</h3>
+                        <p className="text-2xl font-bold text-invest-600">99.95%</p>
                       </div>
                       <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                        <h3 className="text-sm font-medium mb-1 text-invest-700">ISA Accounts</h3>
-                        <p className="text-2xl font-bold text-invest-600">14,500+</p>
-                        <p className="text-xs text-slate-500 mt-1">Managed securely</p>
+                        <h3 className="text-sm font-medium mb-1 text-invest-700">Years of experience</h3>
+                        <p className="text-2xl font-bold text-invest-600">30+</p>
                       </div>
                     </div>
                   </div>
