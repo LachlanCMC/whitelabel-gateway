@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { GradientText } from "@/components/ui/gradient-text";
@@ -13,21 +14,21 @@ const FeaturesSection = () => {
       title: "Fractional Shares",
       description: "Enable your customers to invest in fractional units of expensive stocks, increasing accessibility and portfolio diversification.",
       icon: <ChartBar className="h-6 w-6" />,
-      imageUrl: "https://images.unsplash.com/photo-1642543348745-03b1219733d9?auto=format&fit=crop&w=800&q=80"
+      imageUrl: "https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 2,
       title: "Global Market Access",
       description: "Offer access to international markets with multi-currency support and efficient settlement workflows across 35+ global exchanges.",
       icon: <Globe className="h-6 w-6" />,
-      imageUrl: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=800&q=80"
+      imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 3,
       title: "Mutual Funds",
       description: "Provide access to thousands of mutual funds from leading fund houses with automated order processing and dividend reinvestment.",
       icon: <Coins className="h-6 w-6" />,
-      imageUrl: "https://images.unsplash.com/photo-1613843447716-37b48d2c20ae?auto=format&fit=crop&w=800&q=80"
+      imageUrl: "https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 4,
@@ -46,13 +47,13 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section id="features" className="py-20 md:py-28 relative bg-gray-50">
-      <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-50 -z-10"></div>
+    <section id="features" className="py-20 md:py-28 relative bg-gradient-to-b from-white to-gray-50">
+      <div className="absolute inset-0 -z-10"></div>
       <div className="container mx-auto px-4 md:px-6">
         <div className="mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our products</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-invest-600">Our products</h2>
           <div className="flex items-center">
-            <span className="text-3xl font-bold">0{activeProduct + 1}</span>
+            <span className="text-3xl font-bold text-invest-500">0{activeProduct + 1}</span>
             <div className="h-[1px] w-10 bg-gray-300 mx-4"></div>
             <span className="text-3xl text-gray-300 font-bold">05</span>
           </div>
@@ -64,10 +65,11 @@ const FeaturesSection = () => {
             {products.map((product, index) => (
               <div 
                 key={product.id}
-                className={`transition-all duration-300 cursor-pointer group`}
+                className={`transition-all duration-300 cursor-pointer group py-4 px-6 rounded-xl hover:bg-white hover:shadow-md ${activeProduct === index ? 'bg-white shadow-md' : ''}`}
                 onClick={() => setActiveProduct(index)}
+                onMouseEnter={() => setActiveProduct(index)}
               >
-                <h3 className={`text-3xl md:text-4xl font-bold mb-2 transition-colors duration-300 ${activeProduct === index ? 'text-foreground' : 'text-gray-300'}`}>
+                <h3 className={`text-3xl md:text-4xl font-bold mb-2 transition-colors duration-300 ${activeProduct === index ? 'text-invest-600' : 'text-gray-300'}`}>
                   {product.title}
                 </h3>
                 
@@ -89,14 +91,14 @@ const FeaturesSection = () => {
           </div>
           
           {/* Product Visuals */}
-          <div className="relative bg-gray-100 rounded-3xl overflow-hidden h-[500px]">
+          <div className="relative bg-gradient-to-br from-white to-gray-100 rounded-3xl overflow-hidden h-[500px] shadow-xl">
             {products.map((product, index) => (
               <div 
                 key={product.id}
                 className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${activeProduct === index ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
               >
                 <div className="h-full w-full p-8 flex flex-col justify-between">
-                  <div className="w-full h-4/5 overflow-hidden rounded-2xl">
+                  <div className="w-full h-4/5 overflow-hidden rounded-2xl shadow-inner">
                     <img 
                       src={product.imageUrl} 
                       alt={product.title}
@@ -104,9 +106,9 @@ const FeaturesSection = () => {
                     />
                   </div>
                   <div className="flex items-center justify-between mt-4">
-                    <p className="font-medium text-lg">Choose the investment capabilities that work best for your business and your customers.</p>
+                    <p className="font-medium text-lg text-invest-700">Choose the investment capabilities that work best for your business and your customers.</p>
                     <ShimmerButton 
-                      className="bg-black hover:bg-gray-800 text-white rounded-full flex items-center gap-2 px-6 py-3"
+                      className="bg-invest-500 hover:bg-invest-600 text-white rounded-full flex items-center gap-2 px-6 py-3"
                     >
                       Get started <ArrowRight className="h-4 w-4" />
                     </ShimmerButton>

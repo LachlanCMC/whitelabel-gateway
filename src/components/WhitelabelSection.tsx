@@ -11,14 +11,14 @@ const WhitelabelSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Screenshots on the left - improved layout with overlapping effect */}
           <div className="relative h-[400px] flex items-center justify-center">
-            <div className="absolute z-10 transform rotate-[-8deg] shadow-xl rounded-3xl overflow-hidden border border-gray-100 w-64 md:w-80 h-auto">
+            <div className="absolute z-20 transform rotate-[8deg] shadow-xl rounded-3xl overflow-hidden border border-gray-100 w-64 md:w-80 h-auto">
               <img
                 src="/lovable-uploads/54753089-fb7a-4a30-a9f0-7fa4f0e25ef2.png"
                 alt="Whitelabel Mobile App Portfolio View"
                 className="w-full h-auto"
               />
             </div>
-            <div className="absolute z-20 transform translate-x-16 translate-y-8 rotate-[8deg] shadow-xl rounded-3xl overflow-hidden border border-gray-100 w-64 md:w-80 h-auto">
+            <div className="absolute z-10 transform translate-x-20 translate-y-4 rotate-[-8deg] shadow-xl rounded-3xl overflow-hidden border border-gray-100 w-64 md:w-80 h-auto">
               <img
                 src="/lovable-uploads/d5846e9b-be30-4d00-b842-839774e04402.png"
                 alt="Whitelabel Mobile App Trading View"
