@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import PartnersCarousel from "@/components/PartnersCarousel";
 import FeaturesSection from "@/components/FeaturesSection";
 import WhitelabelSection from "@/components/WhitelabelSection";
 import ApiSection from "@/components/ApiSection";
@@ -42,6 +43,7 @@ const Index = () => {
       <Navbar />
       <main className="flex-grow">
         <HeroSection />
+        <PartnersCarousel />
         <FeaturesSection />
         <WhitelabelSection />
         <ApiSection />
