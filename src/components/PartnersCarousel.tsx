@@ -3,34 +3,34 @@ import React, { useEffect, useRef } from "react";
 
 const partners = [
   {
-    name: "CMC",
+    name: "Revolut",
     logo: "/lovable-uploads/54753089-fb7a-4a30-a9f0-7fa4f0e25ef2.png",
     logoClass: "h-10 md:h-12" // Adjust based on logo proportions
   },
   {
-    name: "CMC",
+    name: "RBC",
     logo: "/lovable-uploads/54753089-fb7a-4a30-a9f0-7fa4f0e25ef2.png",
-    logoClass: "h-10 md:h-12" // Adjust based on logo proportions
+    logoClass: "h-10 md:h-12" 
   },
   {
-    name: "CMC",
+    name: "Currys",
     logo: "/lovable-uploads/54753089-fb7a-4a30-a9f0-7fa4f0e25ef2.png",
-    logoClass: "h-10 md:h-12" // Adjust based on logo proportions
+    logoClass: "h-10 md:h-12" 
   },
   {
-    name: "CMC",
+    name: "ANZ Bank",
     logo: "/lovable-uploads/54753089-fb7a-4a30-a9f0-7fa4f0e25ef2.png",
-    logoClass: "h-10 md:h-12" // Adjust based on logo proportions
+    logoClass: "h-10 md:h-12" 
   },
   {
-    name: "CMC",
+    name: "Bendigo Invest Direct",
     logo: "/lovable-uploads/54753089-fb7a-4a30-a9f0-7fa4f0e25ef2.png",
-    logoClass: "h-10 md:h-12" // Adjust based on logo proportions
+    logoClass: "h-10 md:h-12" 
   },
   {
-    name: "CMC",
+    name: "Plum",
     logo: "/lovable-uploads/54753089-fb7a-4a30-a9f0-7fa4f0e25ef2.png",
-    logoClass: "h-10 md:h-12" // Adjust based on logo proportions
+    logoClass: "h-10 md:h-12" 
   }
 ];
 
@@ -116,7 +116,8 @@ const PartnersCarousel = () => {
         </div>
       </div>
       
-      <style jsx>{`
+      <style>
+        {`
         .ticker-wrap {
           width: 100%;
           overflow-x: scroll;
@@ -141,7 +142,8 @@ const PartnersCarousel = () => {
           display: inline-flex;
           flex-shrink: 0;
         }
-      `}</style>
+        `}
+      </style>
     </section>
   );
 };
