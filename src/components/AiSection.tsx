@@ -9,12 +9,11 @@ const AiSection = () => {
   return (
     <section id="ai" className="py-20 bg-gradient-to-b from-white to-slate-50 overflow-hidden relative">
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="mb-12">
+        <div className="mb-4">
           <p className="text-sm font-medium tracking-widest uppercase text-invest-500 mb-2">AI & AUTOMATION</p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">Build intelligent investment experiences</h2>
         </div>
         
-        <div className="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-16 mt-12">
+        <div className="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-16 mt-8">
           <div className="flex-1 space-y-8 max-w-2xl">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-invest-800 animate-fade-in">
               Revolutionise Wealth Management with Agentic & Generative AI
