@@ -11,7 +11,6 @@ const AiSection = () => {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <SectionHeading
           title="Whitelabel Solutions"
-          subtleText="AI-Powered"
           centered={true}
         />
         
