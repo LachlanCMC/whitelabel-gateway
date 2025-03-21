@@ -40,40 +40,52 @@ const HeroSection = () => {
           </div>
           
           <div className="flex-1 w-full max-w-2xl lg:max-w-none animate-float">
-            <div className="relative rounded-xl overflow-hidden shadow-lg">
-              <AspectRatio ratio={4/3} className="bg-white">
-                <div className="p-6 h-full">
-                  <div className="bg-gradient-to-br from-white to-slate-50 rounded-lg h-full shadow-sm border border-slate-100">
-                    <div className="grid grid-cols-2 gap-4 p-6 h-full">
-                      <div className="space-y-4">
-                        <div className="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 border border-slate-100">
-                          <h3 className="text-sm font-medium mb-1 text-invest-700">Total traders and investors</h3>
-                          <p className="text-2xl font-bold text-invest-600">1m+</p>
-                        </div>
-                        <div className="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 border border-slate-100">
-                          <h3 className="text-sm font-medium mb-1 text-invest-700">Partners supported</h3>
-                          <p className="text-2xl font-bold text-invest-600">150+</p>
-                        </div>
+            {/* Modern stats display */}
+            <div className="relative bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-100/70">
+              <div className="p-8">
+                <div className="grid grid-cols-2 gap-8">
+                  <div className="space-y-6">
+                    <div className="group">
+                      <div className="flex items-baseline mb-2">
+                        <span className="text-4xl font-bold text-invest-700 group-hover:text-invest-600 transition-colors">1m+</span>
+                        <span className="ml-1 text-invest-500 text-lg">users</span>
                       </div>
-                      
-                      <div className="space-y-4">
-                        <div className="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 border border-slate-100">
-                          <h3 className="text-sm font-medium mb-1 text-invest-700">Core uptime</h3>
-                          <p className="text-2xl font-bold text-invest-600">99.95%</p>
-                        </div>
-                        <div className="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 border border-slate-100">
-                          <h3 className="text-sm font-medium mb-1 text-invest-700">Years of experience</h3>
-                          <p className="text-2xl font-bold text-invest-600">30+</p>
-                        </div>
+                      <p className="text-slate-600">Total traders and investors globally</p>
+                    </div>
+                    
+                    <div className="group">
+                      <div className="flex items-baseline mb-2">
+                        <span className="text-4xl font-bold text-invest-700 group-hover:text-invest-600 transition-colors">150+</span>
                       </div>
+                      <p className="text-slate-600">Partners supported across markets</p>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-6">
+                    <div className="group">
+                      <div className="flex items-baseline mb-2">
+                        <span className="text-4xl font-bold text-invest-700 group-hover:text-invest-600 transition-colors">99.95%</span>
+                      </div>
+                      <p className="text-slate-600">Core platform uptime reliability</p>
+                    </div>
+                    
+                    <div className="group">
+                      <div className="flex items-baseline mb-2">
+                        <span className="text-4xl font-bold text-invest-700 group-hover:text-invest-600 transition-colors">30+</span>
+                        <span className="ml-1 text-invest-500 text-lg">years</span>
+                      </div>
+                      <p className="text-slate-600">Industry expertise and experience</p>
                     </div>
                   </div>
                 </div>
-              </AspectRatio>
+              </div>
+              
+              {/* Subtle pattern overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-transparent to-invest-50/10 pointer-events-none"></div>
               
               {/* Decorative elements */}
-              <div className="absolute top-6 right-14 w-20 h-20 rounded-full bg-invest-100/40 filter blur-xl"></div>
-              <div className="absolute bottom-10 left-6 w-16 h-16 rounded-full bg-blue-100/30 filter blur-xl"></div>
+              <div className="absolute -bottom-8 -right-8 w-24 h-24 rounded-full bg-invest-100/20"></div>
+              <div className="absolute top-10 -left-10 w-20 h-20 rounded-full bg-blue-100/20"></div>
             </div>
           </div>
         </div>
