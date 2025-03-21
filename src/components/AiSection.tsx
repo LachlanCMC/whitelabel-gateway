@@ -9,21 +9,20 @@ const AiSection = () => {
   return (
     <section id="ai" className="py-20 bg-gradient-to-b from-white to-slate-50 overflow-hidden relative">
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+        <SectionHeading
+          title="Whitelabel Solutions"
+          subtleText="AI-Powered"
+          centered={true}
+        />
+        
+        <div className="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-16 mt-12">
           <div className="flex-1 space-y-8 max-w-2xl">
-            <SectionHeading
-              title="AI-Powered Investment Solutions"
-              centered={false}
-              className="text-left"
-            />
-            
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-invest-800 animate-fade-in">
-              Leverage the power of generative AI to empower your investors—safely, transparently, and at scale
+              Revolutionise Wealth Management with Agentic & Generative AI
             </h2>
             
             <p className="text-lg text-slate-600 animate-fade-in">
-              Transform your investment platform with cutting-edge AI technology that delivers personalized insights, 
-              predictive analytics, and automated portfolio management while maintaining regulatory compliance.
+              Leverage the power of agentic and generative AI to deliver real-time, explainable portfolio insights and optimize every stage of the wealth management journey. Enhance client outcomes through predictive analytics, personalized engagement, and seamless automation—all while adhering to industry regulations. With robust data protection at its core, this innovative approach to AI transforms the wealth management experience by boosting efficiency, accuracy, and security.
             </p>
             
             <div className="pt-4 animate-fade-in">
@@ -37,28 +36,18 @@ const AiSection = () => {
           
           <div className="flex-1 relative">
             <div className="relative w-full aspect-square md:aspect-[4/3] overflow-hidden rounded-2xl shadow-xl animate-float">
-              <div className="absolute inset-0 bg-gradient-to-br from-invest-600 to-invest-800 opacity-95"></div>
-              <div className="absolute inset-0 flex flex-col justify-center p-8">
-                <div className="glass-panel bg-white/10 p-6 rounded-xl mb-6 backdrop-blur-md border border-white/20 transform hover:scale-105 transition-transform duration-300">
-                  <h3 className="text-white text-lg font-medium mb-2">AI Investment Copilot</h3>
-                  <p className="text-white/80 text-sm">
-                    "What's the best way to diversify my tech-heavy portfolio given current market conditions?"
-                  </p>
-                </div>
-                
-                <div className="glass-panel bg-white/10 p-6 rounded-xl backdrop-blur-md border border-white/20 transform hover:scale-105 transition-transform duration-300">
-                  <h3 className="text-white text-lg font-medium mb-2">Personalized Analysis</h3>
-                  <div className="flex space-x-2 mb-3">
-                    <div className="h-2 w-full bg-white/20 rounded-full overflow-hidden">
-                      <div className="h-full bg-green-400 w-3/4 rounded-full"></div>
-                    </div>
-                    <span className="text-white text-xs whitespace-nowrap">75% Match</span>
-                  </div>
-                  <p className="text-white/80 text-sm">
-                    Portfolio optimization suggests reducing tech exposure by 15% and increasing healthcare allocation.
-                  </p>
-                </div>
-              </div>
+              <img 
+                src="/lovable-uploads/381ee24d-0db7-4560-8dd3-7680e6916089.png" 
+                alt="AI Wealth Management" 
+                className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
+              />
+              
+              {/* Overlay gradient */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-invest-800/30 to-transparent opacity-80 mix-blend-overlay"></div>
+              
+              {/* Decorative elements */}
+              <div className="absolute bottom-6 right-6 w-12 h-12 rounded-full bg-invest-100/50 backdrop-blur-sm"></div>
+              <div className="absolute top-10 left-10 w-20 h-20 rounded-full bg-invest-500/10 backdrop-blur-sm"></div>
             </div>
           </div>
         </div>
