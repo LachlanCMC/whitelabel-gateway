@@ -23,7 +23,7 @@ const CtaSection = () => {
               Ready to transform your 
               <span className="block mt-2">
                 <GradientText 
-                  text="investment offerings?" 
+                  text="wealth offerings?" 
                   fromColor="from-invest-400" 
                   toColor="to-invest-600"
                   animate={true}
