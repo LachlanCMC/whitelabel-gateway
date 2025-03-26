@@ -16,7 +16,7 @@ const HeroSection = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           <div className="flex-1 space-y-8 animate-fade-in max-w-2xl">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight md:leading-tight text-invest-800">
-              Launch wealth products 
+              Wealth platform as a service
               <span className="block mt-2">
                 in weeks, not years
               </span>

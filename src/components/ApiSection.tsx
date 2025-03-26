@@ -11,7 +11,7 @@ const ApiSection = () => {
           <div className="space-y-8">
             <p className="text-sm font-medium mb-2 text-invest-500">Driven by technology</p>
             <h2 className="text-5xl md:text-6xl font-bold text-invest-500 mb-6">
-              Be part of the future of<br />banking with our API
+              Grow and scale your business<br />faster with our API
             </h2>
             <p className="text-xl text-invest-600 max-w-3xl">
               With our cloud-based API, we offer banking infrastructure so financial institutions can 
