@@ -16,13 +16,13 @@ const HeroSection = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           <div className="flex-1 space-y-8 animate-fade-in max-w-2xl">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight md:leading-tight text-invest-800">
-              Launch wealth products 
+              Wealth Platform 
               <span className="block mt-2">
-                in weeks, not years
+                as a Service
               </span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl">
-              Comprehensive whitelabel & API solutions to build, launch, and scale exceptional investment experiences — with global reach and regulatory compliance.
+              Launch comprehensive investment solutions in weeks, not years. Seamlessly integrate, scale, and customize your wealth management offering with our enterprise-grade infrastructure.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <ShimmerButton 
@@ -40,52 +40,44 @@ const HeroSection = () => {
           </div>
           
           <div className="flex-1 w-full max-w-2xl lg:max-w-none animate-float">
-            {/* Modern stats display */}
-            <div className="relative bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-100/70">
-              <div className="p-8">
-                <div className="grid grid-cols-2 gap-8">
-                  <div className="space-y-6">
-                    <div className="group">
-                      <div className="flex items-baseline mb-2">
-                        <span className="text-4xl font-bold text-invest-700 group-hover:text-invest-600 transition-colors">1m+</span>
-                        <span className="ml-1 text-invest-500 text-lg">users</span>
-                      </div>
-                      <p className="text-slate-600">Total traders and investors globally</p>
+            {/* Animated graphic illustrating modules assembling */}
+            <div className="relative overflow-hidden rounded-2xl shadow-lg border border-slate-100/70 bg-white p-6">
+              <div className="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-invest-50/30 rounded-full filter blur-2xl"></div>
+              
+              <div className="relative z-10">
+                {/* Animated modules assembling illustration */}
+                <div className="grid grid-cols-3 gap-4">
+                  {/* Animated modules that appear to assemble together */}
+                  {['Fractional Shares', 'Tax Wrappers', 'Mutual Funds', 'Global Markets', 'Portfolio Mgmt', 'KYC', 'Custody', 'Payments', 'AR Services'].map((module, index) => (
+                    <div 
+                      key={index}
+                      className="aspect-square rounded-lg bg-gradient-to-br from-invest-50 to-invest-100 flex items-center justify-center p-3 shadow-sm border border-invest-200/50 text-invest-700 font-medium text-sm text-center transform hover:scale-105 transition-all duration-300"
+                      style={{
+                        animationDelay: `${index * 0.1}s`,
+                        animationFillMode: "backwards",
+                        animationName: "fade-in",
+                        animationDuration: "0.6s",
+                      }}
+                    >
+                      {module}
                     </div>
-                    
-                    <div className="group">
-                      <div className="flex items-baseline mb-2">
-                        <span className="text-4xl font-bold text-invest-700 group-hover:text-invest-600 transition-colors">150+</span>
-                      </div>
-                      <p className="text-slate-600">Partners supported across markets</p>
-                    </div>
-                  </div>
-                  
-                  <div className="space-y-6">
-                    <div className="group">
-                      <div className="flex items-baseline mb-2">
-                        <span className="text-4xl font-bold text-invest-700 group-hover:text-invest-600 transition-colors">99.95%</span>
-                      </div>
-                      <p className="text-slate-600">Core platform uptime reliability</p>
-                    </div>
-                    
-                    <div className="group">
-                      <div className="flex items-baseline mb-2">
-                        <span className="text-4xl font-bold text-invest-700 group-hover:text-invest-600 transition-colors">30+</span>
-                        <span className="ml-1 text-invest-500 text-lg">years</span>
-                      </div>
-                      <p className="text-slate-600">Industry expertise and experience</p>
-                    </div>
-                  </div>
+                  ))}
+                </div>
+                
+                {/* Central platform hub */}
+                <div className="mt-6 rounded-xl bg-invest-500 text-white p-4 text-center font-bold shadow-md transform hover:scale-105 transition-all duration-300 animate-pulse-slow">
+                  Unified Wealth Platform
+                </div>
+                
+                {/* Connection lines (represented with borders) */}
+                <div className="absolute inset-0 pointer-events-none">
+                  <svg className="w-full h-full" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M200 150 L200 250" stroke="rgba(17, 58, 42, 0.2)" strokeWidth="2" strokeDasharray="5,5" />
+                    <path d="M100 150 L200 250" stroke="rgba(17, 58, 42, 0.2)" strokeWidth="2" strokeDasharray="5,5" />
+                    <path d="M300 150 L200 250" stroke="rgba(17, 58, 42, 0.2)" strokeWidth="2" strokeDasharray="5,5" />
+                  </svg>
                 </div>
               </div>
-              
-              {/* Subtle pattern overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-transparent to-invest-50/10 pointer-events-none"></div>
-              
-              {/* Decorative elements */}
-              <div className="absolute -bottom-8 -right-8 w-24 h-24 rounded-full bg-invest-100/20"></div>
-              <div className="absolute top-10 -left-10 w-20 h-20 rounded-full bg-blue-100/20"></div>
             </div>
           </div>
         </div>
