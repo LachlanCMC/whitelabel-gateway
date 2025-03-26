@@ -1,6 +1,5 @@
 
 import React from "react";
-import { SectionHeading } from "@/components/ui/section-heading";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -9,16 +8,15 @@ const AiSection = () => {
   return (
     <section id="ai" className="py-20 bg-gradient-to-b from-white to-slate-50 overflow-hidden relative">
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="mb-4">
-          <p className="text-sm font-medium tracking-widest uppercase text-invest-500 mb-2">AI & AUTOMATION</p>
+        <div className="mb-8">
+          <p className="text-sm font-medium tracking-widest uppercase text-invest-500">AI & AUTOMATION</p>
+          <h2 className="text-5xl md:text-6xl font-bold text-invest-500 mb-6">
+            Revolutionise Wealth Management with<br />Agentic & Generative AI
+          </h2>
         </div>
         
         <div className="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-16 mt-8">
           <div className="flex-1 space-y-8 max-w-2xl">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-invest-800 animate-fade-in">
-              Revolutionise Wealth Management with Agentic & Generative AI
-            </h2>
-            
             <p className="text-lg text-slate-600 animate-fade-in">
               Leverage the power of agentic and generative AI to deliver real-time, explainable portfolio insights and optimize every stage of the wealth management journey. Enhance client outcomes through predictive analytics, personalized engagement, and seamless automation—all while adhering to industry regulations. With robust data protection at its core, this innovative approach to AI transforms the wealth management experience by boosting efficiency, accuracy, and security.
             </p>

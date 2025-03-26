@@ -41,51 +41,38 @@ const HeroSection = () => {
           
           <div className="flex-1 w-full max-w-2xl lg:max-w-none animate-float">
             {/* Modern stats display */}
-            <div className="relative bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-100/70">
-              <div className="p-8">
-                <div className="grid grid-cols-2 gap-8">
-                  <div className="space-y-6">
-                    <div className="group">
-                      <div className="flex items-baseline mb-2">
-                        <span className="text-4xl font-bold text-invest-700 group-hover:text-invest-600 transition-colors">1m+</span>
-                        <span className="ml-1 text-invest-500 text-lg">users</span>
-                      </div>
-                      <p className="text-slate-600">Total traders and investors globally</p>
-                    </div>
-                    
-                    <div className="group">
-                      <div className="flex items-baseline mb-2">
-                        <span className="text-4xl font-bold text-invest-700 group-hover:text-invest-600 transition-colors">150+</span>
-                      </div>
-                      <p className="text-slate-600">Partners supported across markets</p>
-                    </div>
-                  </div>
-                  
-                  <div className="space-y-6">
-                    <div className="group">
-                      <div className="flex items-baseline mb-2">
-                        <span className="text-4xl font-bold text-invest-700 group-hover:text-invest-600 transition-colors">99.95%</span>
-                      </div>
-                      <p className="text-slate-600">Core platform uptime reliability</p>
-                    </div>
-                    
-                    <div className="group">
-                      <div className="flex items-baseline mb-2">
-                        <span className="text-4xl font-bold text-invest-700 group-hover:text-invest-600 transition-colors">30+</span>
-                        <span className="ml-1 text-invest-500 text-lg">years</span>
-                      </div>
-                      <p className="text-slate-600">Industry expertise and experience</p>
-                    </div>
-                  </div>
+            <div className="grid grid-cols-2 gap-4 md:gap-6">
+              <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100/70 group">
+                <div className="flex flex-col">
+                  <span className="text-4xl sm:text-5xl font-bold text-invest-700 group-hover:text-invest-600 transition-colors">1m+</span>
+                  <span className="text-invest-500 text-sm font-medium mt-1 mb-2">USERS</span>
+                  <p className="text-slate-600 text-sm">Total traders and investors globally</p>
                 </div>
               </div>
               
-              {/* Subtle pattern overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-transparent to-invest-50/10 pointer-events-none"></div>
+              <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100/70 group">
+                <div className="flex flex-col">
+                  <span className="text-4xl sm:text-5xl font-bold text-invest-700 group-hover:text-invest-600 transition-colors">150+</span>
+                  <span className="text-invest-500 text-sm font-medium mt-1 mb-2">PARTNERS</span>
+                  <p className="text-slate-600 text-sm">Supported across markets</p>
+                </div>
+              </div>
               
-              {/* Decorative elements */}
-              <div className="absolute -bottom-8 -right-8 w-24 h-24 rounded-full bg-invest-100/20"></div>
-              <div className="absolute top-10 -left-10 w-20 h-20 rounded-full bg-blue-100/20"></div>
+              <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100/70 group">
+                <div className="flex flex-col">
+                  <span className="text-4xl sm:text-5xl font-bold text-invest-700 group-hover:text-invest-600 transition-colors">99.95%</span>
+                  <span className="text-invest-500 text-sm font-medium mt-1 mb-2">UPTIME</span>
+                  <p className="text-slate-600 text-sm">Core platform uptime reliability</p>
+                </div>
+              </div>
+              
+              <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100/70 group">
+                <div className="flex flex-col">
+                  <span className="text-4xl sm:text-5xl font-bold text-invest-700 group-hover:text-invest-600 transition-colors">30+</span>
+                  <span className="text-invest-500 text-sm font-medium mt-1 mb-2">YEARS</span>
+                  <p className="text-slate-600 text-sm">Industry expertise and experience</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
